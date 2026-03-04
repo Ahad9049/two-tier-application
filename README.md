@@ -15,13 +15,13 @@ Before you begin, make sure you have the following installed:
 1. Clone this repository (if you haven't already):
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Ahad9049/two-tier-application
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd your-repo-name
+   cd two-tier-application
    ```
 
 3. Create a `.env` file in the project directory to store your MySQL environment variables:
@@ -33,10 +33,10 @@ Before you begin, make sure you have the following installed:
 4. Open the `.env` file and add your MySQL configuration:
 
    ```
-   MYSQL_HOST=mysql
-   MYSQL_USER=your_username
-   MYSQL_PASSWORD=your_password
-   MYSQL_DB=your_database
+   MYSQL_HOST=localhost
+   MYSQL_USER=root
+   MYSQL_PASSWORD=NewStrongPassword
+   MYSQL_DB=flaskapp
    ```
 
 ## Usage
