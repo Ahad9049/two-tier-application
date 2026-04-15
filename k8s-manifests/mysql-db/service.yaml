@@ -1,4 +1,3 @@
-# MySQL Service
 apiVersion: v1
 kind: Service
 metadata:
@@ -6,9 +5,8 @@ metadata:
   namespace: mysql-db
 spec:
   selector:
-    app: mysql
+    app: mysql-db
   ports:
     - port: 3306
       targetPort: 3306
-      nodePort: 30306 
   type: ClusterIP
