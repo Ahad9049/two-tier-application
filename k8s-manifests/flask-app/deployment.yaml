@@ -16,7 +16,16 @@ spec:
         app: flask-app
     spec:
       containers: 
-      - name: flask-app
-        image: abdulahad9049/flask-app-k8s:v1.0
-        ports:
-        - containerPort: 5000
+        - name: flask-app
+          image: abdulahad9049/flask-app-k8s:v1.0
+          env:
+            - name: MYSQL_HOST
+              value: "mysql-service.mysql-db.svc.cluster.local"
+            - name: MYSQL_USER
+              value: "root"
+            - name: MYSQL_DB   
+              value: "mysql"
+            - name: MYSQL_PASSWORD
+              value: "admin"
+          ports:
+            - containerPort: 5000
